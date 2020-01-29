@@ -17,7 +17,7 @@ On this days, the countdown start between two vehicles is made by gestures or wh
 The solution goes through a Bluetooth connection (client/server connection) with two android mobile devices (tablets/phones), where the **client** connects to the **server** and starts the count that will be done syncronized on both.
 
 
-# Operating Schemes
+# Operating Flow
 
 ### Server
 ![Server Scheme](/images/servidor.png)
