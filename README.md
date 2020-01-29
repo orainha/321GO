@@ -6,7 +6,7 @@ Syncronized countdown app between two devices (mobile phones, tablets) via bluet
 [321GO - Bluetooth Countdown App (PROMO Video)](https://youtu.be/4KKZAPzTNAA)
 
 ###### Playstore
-[321GO - Bluetooth CountDown](https://play.google.com/store/apps/details?id=project.a321go)
+[321GO - Bluetooth CountDown (PLAYSTORE)](https://play.google.com/store/apps/details?id=project.a321go)
 
 
 # Problem
