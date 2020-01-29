@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_countdown"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".CountDownActivity"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+        <ProgressBar
+            android:id="@+id/progressBar_count"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="339dp"
+            android:layout_height="311dp"
+            android:layout_centerInParent="true"
+            android:progress="0"
+            android:progressDrawable="@drawable/countdown_server_prog_bar" />
+            />
+
+        <TextView
+            android:id="@+id/textView_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="-"
+            android:textSize="90sp" />
+
+        <Button
+            android:id="@+id/btn_sair"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="130dp"
+            android:layout_marginTop="15dp"
+            android:background="#ffffff"
+            android:onClick="onClickSair"
+            android:text="@string/countDown_btn_close"
+            android:textAllCaps="false"
+            android:textColor="#C7C7C7"
+            android:textSize="16sp" />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

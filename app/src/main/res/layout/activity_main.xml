@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_weight="0.7"
+        android:clipChildren="false"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+
+        <Button
+            android:id="@+id/btn_pt"
+            android:layout_width="64dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/tv_divide"
+            android:background="@android:color/transparent"
+            android:onClick="onClickPT"
+            android:text="PT"
+            android:textColor="#C7C7C7"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@id/btn_en"
+            android:text="|"
+            android:textColor="#C7C7C7" />
+
+        <Button
+            android:id="@+id/btn_en"
+            android:layout_width="64dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClickEN"
+            android:text="EN"
+            android:textColor="#C7C7C7" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_above="@+id/tv321"
+            android:layout_weight="0"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv321"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_servidor"
+            android:layout_marginBottom="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:gravity="top|center"
+            android:text="321GO"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+        <!--
+                <ImageView
+                    android:id="@+id/img_criar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignLeft="@+id/btn_servidor"
+                    android:layout_alignTop="@+id/btn_servidor"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="35dp"
+                    app:srcCompat="@drawable/criar_ligacao" />
+
+                <ImageView
+                    android:id="@+id/img_ligar"
+                    android:layout_width="34dp"
+                    android:layout_height="32dp"
+                    android:layout_alignTop="@+id/btn_ligar"
+                    android:layout_alignRight="@+id/img_criar"
+                    android:layout_marginTop="45dp"
+                    app:srcCompat="@drawable/ligar" />-->
+
+        <Button
+            android:id="@+id/btn_servidor"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundedbutton_main_criar"
+            android:drawableLeft="@drawable/criar_ligacao"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/criar_ligacao"
+            android:gravity="center_horizontal|center_vertical"
+            android:onClick="onClickServidor"
+            android:paddingLeft="35dp"
+            android:paddingRight="40dp"
+            android:stateListAnimator="@null"
+            android:text="@string/main_btn_create_con"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+
+        <!-- Tentar Trocar por um botão, por causa do idioma -->
+        <ImageView
+            android:id="@+id/img_ou"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="-25dp"
+            android:layout_marginTop="-25dp"
+            android:layout_weight="0"
+            android:layout_below="@+id/btn_servidor"
+            android:paddingTop="0dp"
+            app:srcCompat="@drawable/or" />
+
+
+        <Button
+            android:id="@+id/btn_ligar"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_below="@id/img_ou"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0"
+            android:background="@drawable/roundedbutton_main_ligar"
+            android:drawableLeft="@drawable/ligar"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ligar"
+            android:enabled="true"
+            android:onClick="onClickCliente"
+            android:paddingLeft="45dp"
+            android:paddingRight="70dp"
+            android:stateListAnimator="@null"
+            android:text="@string/main_btn_connect"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="21sp" />
+
+
+        <TextView
+            android:id="@+id/tvShare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="0"
+            android:gravity="bottom|end"
+            android:paddingBottom="12dp"
+            android:paddingRight="65dp"
+            android:text="@string/main_fb_share"
+            android:textSize="7sp" />
+
+        <TextView
+            android:id="@+id/tvViaBT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvShare"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:text="@string/main_con_via_bt"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/img_fb_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignEnd="@+id/tvShare"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/tvShare"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="25dp"
+            android:clickable="true"
+            app:srcCompat="@drawable/fb_icon" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

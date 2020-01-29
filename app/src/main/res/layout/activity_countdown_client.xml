@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_client_count"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    tools:context=".CountDownClientActivity">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
+
+    <TextView
+        android:id="@+id/textView_counter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/progressBar"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:text="-"
+        android:textColor="#7F7F7F"
+        android:textSize="90sp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_weight="0"
+        android:background="@android:color/transparent"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_above="@id/btn_sair"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/roundedbutton_clnt_iniciar"
+        android:onClick="onClickStartClient"
+        android:stateListAnimator="@null"
+        android:text="@string/countDownClient_btn_start"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_try_again"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_alignTop="@id/btn_start"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_weight="0"
+        android:background="@drawable/roundedbutton_clnt_iniciar"
+        android:onClick="onClickTryAgain"
+        android:stateListAnimator="@null"
+        android:text="@string/countDownClient_btn_try_again"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_sair"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_dev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClickSair"
+        android:text="@string/countDownClient_btn_close"
+        android:textAllCaps="false"
+        android:textColor="#C7C7C7"
+        android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/status_standby" />
+
+        <TextView
+            android:id="@+id/textView_device"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:text="-"
+            android:textColor="#999999" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

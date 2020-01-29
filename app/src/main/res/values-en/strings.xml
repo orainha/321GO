@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">321GO</string>
+    <string name="facebook_app_id">2267648290015272</string>
+    <string name="facebook_login_protocol_scheme">fb2267648290015272</string>
+
+    <!-- Main Activity -->
+    <string name="main_btn_create_con">Create Connection</string>
+    <string name="main_btn_connect">Connect</string>
+    <string name="main_con_via_bt">Connection via bluetooth</string>
+    <string name="main_fb_share">Share</string>
+    <string name="main_toast_btNotSup">Bluetooth access denied or not suported</string>
+    <string name="main_toast_btPermDen">Bluetooth detectable off</string>
+
+    <!-- Settings Activity -->
+    <string name="set_seconds">Seconds</string>
+    <string name="set_select">How many seconds to the countdown?</string>
+    <string name="set_btn_start">Start</string>
+    <string name="set_btn_exit">Exit</string>
+
+    <!-- Server Activity -->
+    <string name="server_msg1">Waiting for connect</string>
+    <string name="server_msg2">Tell the guy to click on Connect...</string>
+    <string name="server_msg3">He should retry Connect and chose device:</string>
+    <string name="server_msg4">One of you both must Create Connection and the other must Connect</string>
+
+    <string name="server_close">Close</string>
+
+    <!-- CountDownServer Activity -->
+    <string name="countDownServ_wait">Wait for the dude to press START</string>
+    <string name="countDownServ_close">Close</string>
+
+    <!-- BluetoothConnectionList Activity -->
+    <string name="btConList_con">Connect</string>
+    <string name="btConList_select">Select device that created connection</string>
+    <string name="btConList_btn_search">Search</string>
+    <string name="btConList_btn_exit">Exit</string>
+
+    <string name="btConList_dialog_search_title">Searching...</string>
+    <string name="btConList_dialog_search_text">Searching for devices to connect</string>
+    <string name="btConList_dialog_search_btn_stop">Stop</string>
+
+    <string name="btConList_dialog_con_title">Connecting</string>
+    <string name="btConList_dialog_con_text">Wait a second..</string>
+    <string name="btConList_dialog_con_btn_stop">Stop</string>
+
+    <string name="btConList_dialog_notFound_title">Nothing Found</string>
+    <string name="btConList_dialog_notFound_text">Tell the guy to click on Create Connection and try again</string>
+    <string name="btConList_dialog_notFound_btn_stop">Stop</string>
+
+
+    <!-- CountDownClient Activity -->
+    <string name="countDownClient_btn_start">Start</string>
+    <string name="countDownClient_btn_close">Close</string>
+    <string name="countDownClient_btn_try_again">Reconnect</string>
+
+    <string name="countDownClient_dialog_try_title"></string>
+    <string name="countDownClient_dialog_try_text">Reconnecting..</string>
+    <string name="countDownClient_dialog_try_btn_stop">Stop</string>
+
+    <string name="countDownClient_dialog_notPossible_title">Too much time!</string>
+    <string name="countDownClient_dialog_notPossible_text">Tell the guy to click on Create Connection and try again</string>
+    <string name="countDownClient_dialog_notPossible_btn_stop">Stop</string>
+
+    <!-- SocketHandler AlertDialog-->
+    <string name="sockHandler_alert_title">Close</string>
+    <string name="sockHandler_alert_text">Do you really want to close the connection?</string>
+    <string name="sockHandler_alert_btn_yes">Yes</string>
+    <string name="sockHandler_alert_btn_cancel">Cancel</string>
+
+    <string name="sockHandler_alert_notPossible_title">Connecting Error</string>
+    <string name="sockHandler_alert_notPossible_text">Tell the guy to click on Create Connection and try again.</string>
+    <string name="sockHandler_alert_notPossible_btn_try_again">Try Again</string>
+    <string name="sockHandler_alert_notPossible_btn_exit">Exit</string>
+
+    <string name="toast_con_failed">Connection Failed</string>
+
+    <!-- CountDown Activity -->
+    <string name="countDown_btn_close">Close</string>
+
+
+</resources>

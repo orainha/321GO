@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">321GO</string>
+    <string name="facebook_app_id">2267648290015272</string>
+    <string name="facebook_login_protocol_scheme">fb2267648290015272</string>
+
+    <!-- Main Activity -->
+    <string name="main_btn_create_con">Criar Ligação</string>
+    <string name="main_btn_connect">Ligar</string>
+    <string name="main_con_via_bt">Ligação via bluetooth</string>
+    <string name="main_fb_share">Partilha</string>
+    <string name="main_toast_btNotSup">Acesso bluetooth negado ou não suportado</string>
+    <string name="main_toast_btPermDen">Bluetooth detectável desactivado</string>
+
+    <!-- Settings Activity -->
+    <string name="set_seconds">Segundos</string>
+    <string name="set_select">Quantos segundos para a contagem?</string>
+    <string name="set_btn_start">Iniciar</string>
+    <string name="set_btn_exit">Sair</string>
+
+    <!-- Server Activity -->
+    <string name="server_msg1">Aguardando ligação</string>
+    <string name="server_msg2">Diz ao gajo para carregar no Ligar</string>
+    <string name="server_msg3">Ele que experimente voltar a Ligar e escolher:</string>
+    <string name="server_msg4">Um de vocês tem que Criar Ligação e o outro Ligar</string>
+
+    <string name="server_close">Terminar</string>
+
+    <!-- CountDownServer Activity -->
+    <string name="countDownServ_wait">Espera que o gajo carregue em INICIAR</string>
+    <string name="countDownServ_close">Terminar</string>
+
+    <!-- BluetoothConnectionList Activity -->
+    <string name="btConList_con">Ligar</string>
+    <string name="btConList_select">Selecciona o dispositivo que criou ligação</string>
+    <string name="btConList_btn_search">Procurar</string>
+    <string name="btConList_btn_exit">Sair</string>
+
+    <string name="btConList_dialog_search_title">A procurar</string>
+    <string name="btConList_dialog_search_text">A procurar dispositivos para iniciar ligação</string>
+    <string name="btConList_dialog_search_btn_stop">Parar</string>
+
+    <string name="btConList_dialog_con_title">A ligar</string>
+    <string name="btConList_dialog_con_text">Espera um bocado</string>
+    <string name="btConList_dialog_con_btn_stop">Parar</string>
+
+    <string name="btConList_dialog_notFound_title">Nenhum Encontrado</string>
+    <string name="btConList_dialog_notFound_text">Diz ao gajo para carregar em Criar Ligação novamente</string>
+    <string name="btConList_dialog_notFound_btn_stop">Parar</string>
+
+
+    <!-- CountDownClient Activity -->
+    <string name="countDownClient_btn_start">Iniciar</string>
+    <string name="countDownClient_btn_close">Terminar</string>
+    <string name="countDownClient_btn_try_again">Ligar Novamente</string>
+
+    <string name="countDownClient_dialog_try_title"></string>
+    <string name="countDownClient_dialog_try_text">A tentar ligação</string>
+    <string name="countDownClient_dialog_try_btn_stop">Parar</string>
+
+    <string name="countDownClient_dialog_notPossible_title">Muito tempo!</string>
+    <string name="countDownClient_dialog_notPossible_text">Diz ao gajo para carregar em Criar Ligação e tenta novamente.</string>
+    <string name="countDownClient_dialog_notPossible_btn_stop">Sair</string>
+
+    <!-- SocketHandler AlertDialog-->
+    <string name="sockHandler_alert_title">Terminar</string>
+    <string name="sockHandler_alert_text">Queres mesmo terminar a ligação?</string>
+    <string name="sockHandler_alert_btn_yes">Sim</string>
+    <string name="sockHandler_alert_btn_cancel">Cancelar</string>
+
+    <string name="sockHandler_alert_notPossible_title">Erro na ligação</string>
+    <string name="sockHandler_alert_notPossible_text">Diz ao gajo para carregar em Criar Ligação e tenta novamente.</string>
+    <string name="sockHandler_alert_notPossible_btn_try_again">Tentar Novamente</string>
+    <string name="sockHandler_alert_notPossible_btn_exit">Sair</string>
+
+    <string name="toast_con_failed">Ligação Falhou</string>
+
+    <!-- CountDown Activity -->
+    <string name="countDown_btn_close">Terminar</string>
+
+
+</resources>
