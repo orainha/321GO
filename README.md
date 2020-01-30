@@ -2,6 +2,8 @@
 # 321GO
 Syncronized countdown app between two devices (mobile phones, tablets) via bluetooth
 
+###### (Made on Android Studio)
+
 ###### Youtube
 [321GO - Bluetooth Countdown App (PROMO Video)](https://youtu.be/4KKZAPzTNAA)
 
@@ -24,3 +26,5 @@ The solution goes through a Bluetooth connection (client/server connection) with
 
 ### Client
 ![Client Scheme](/images/cliente.png)
+
+
